@@ -1,0 +1,21 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+    background: linear-gradient(#060606,#545050);
+
+}
+
+main{
+    height: 76vh;
+}
+

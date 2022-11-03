@@ -1,0 +1,45 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+header {
+	width: 100%;
+	background-color: rgb(43, 39, 39);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 12vh;
+	color: rgb(144, 35, 198);
+	padding: 20px 0;
+}
+.logo-imagem{
+	width: 50px;
+	height: 50px;
+	background-color: rgb(144, 35, 198);
+	text-transform: uppercase;
+	border-radius: 25px;
+}
+.container-logo{
+	display: flex;
+	align-items: center;
+}
+.logo-texto{
+	margin-left: 20px;
+}
+.menu a{
+	font-size: 24px;
+	text-decoration: none;
+	color: rgb(144, 35, 198);
+	text-transform: uppercase;
+	padding: 10px 15px;
+}
+.menu a:hover{
+	background-color: rgb(100,100,100, 0.5);
+}
+
+body{
+	background: rgb(127, 119, 119);
+}
