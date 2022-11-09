@@ -27,3 +27,8 @@ main{overflow-y: auto;}
   font-size: 15px;
   text-align: center;
   }
+  .btnenv input:hover{
+    cursor: pointer;
+    font-size:31px;
+    background-color: #545050;
+    }
