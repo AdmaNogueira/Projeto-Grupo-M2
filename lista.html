@@ -1,56 +1,114 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="pt-br">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./CSS/header.css">
-	<link rel="stylesheet" href="./CSS/footer.css">
-	<script text="text/JavaScript" src="./JS/contato.js"></script>
-	<title>Lista</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/header.css">   
+    <link rel="stylesheet" href="./CSS/footer.css">
+    <link rel="stylesheet" href="./CSS/cadastro.css">
+    <title>Lista de espera</title>
 </head>
-</body>
-<header>
-	<div class="container-logo">
-		<div class="logo-imagem"></div>
-		<div class="logo-texto">
-			<h1>LOGOTIPO</h1>
-		</div>
-	</div>  
-	<!-- LOGOTIPO -->
+<body>
+  <header>
+  <div class="container-logo">
+    <div class="logo-imagem"></div>
+    <div class="logo-texto">
+      <h1>LOGOTIPO</h1>
+    </div>
+  </div>  
+  <!-- LOGOTIPO -->
+  
+    <div class="menu">
+      <a href="index.html">Home</a>
+			&nbsp;
+		<a href="serviços.html">Serviços</a>
+			&nbsp;
+		<a href="lista.html">Cadastre-se</a>
+			&nbsp;
+		<a href="contato.html">Contato</a>
+			&nbsp;
+      
+    </div>
+    <!-- MENU -->
+  </header>
+  <!-- CABEÇALHO -->
 
-	<div class="menu">
-		
-			<a href="index.html">Home</a>
-				&nbsp;
-			<a href="sobre.html">Sobre</a>
-				&nbsp;
-			<a href="lista.html">Lista</a>
-				&nbsp;
-			<a href="contato.html">Contato</a>
-				&nbsp;
-		
-	</div>
-	<!-- MENU -->
-</header>
-<!-- CABEÇALHO -->
+  <main>
+    <form>
+    <div class="container">
+      <h2>Cadastre-se na lista de espera</h2>
+      <div class="bdr">
+          <div class="form-group">
+            <label>Nome</label>
+          <input type="text" placeholder="Digite seu nome" class="form-control" id="nome"  required>
+        </div>
+
+          <div class="form-group">
+            <label>E-mail</label>
+          <input type= "email" placeholder="Digite seu e-mail" class="form-control" required>
+        </div>
+
+          <div class="form-group">
+            <label>RG</label>
+          <input type="text" placeholder="Digite seu RG"  title="Digite apenas números" class="form-control" maxlength="9" onkeypress="return onlyNumberKey(event)" required >
+        </div>
+
+          <div class="form-group">
+            <label>Senha</label>
+          <input type="password" placeholder="Digite sua senha"class="form-control" id="psw"  pattern="^(?=.*[0-9]+.*)(?=.*[a-zA-Z]+.*)[0-9a-zA-Z]{8,}$" Title="A senha deverá ser composta por letras e números e possuir, no mínimo, 8 caracteres" required>
+          <samp class="sp">Deverá ser composta por letras e <p> números e possuir, no mínimo, 8 caracteres</samp>
+        </div>
+
+          <div class="form-group">
+            <label>Confirme sua senha</label>
+          <input type="password" placeholder="Confirme sua senha" class="form-control" id="psw-repeat" required>
+        </div>
 
 
+        <!-- endereço -->
+        <div class="form-group">
+          <label for="cep">CEP</label>
+          <input type="text" class="form-control" maxlength="9" id="cep" placeholder="Digite seu CEP" required>
+        </div>
+        
+        <div class="form-group ">
+          <label for="logradouro">Rua</label>
+          <input type="text" class="form-control" id="logradouro" placeholder="Rua" required>
+        </div>
+        <div class="form-group nume">
+          <label for="numero">Número:</label>
+          <input type="numero" class="form-control" placeholder="Numero" required>
+        </div>
+        <div class="form-grup">
+          <label for="complemento">Complemento</label>
+          <input type="text" class="form-control" placeholder="Digite um complemento" required>
+        </div>
+        <div class="form-group">
+          <label for="bairro">BAIRRO</label>
+          <input type="text" class="form-control" id="bairro" placeholder="Bairro" required>
+          </div>
 
+        <div class="form-group">
+          <label for="localidade">CIDADE</label>
+          <input type="text" class="form-control" id="localidade" placeholder="Cidade" required>
+          </div>
 
+        <div class="form-group">
+          <label for="uf">UF</label>
+          <input type="text" class="form-control" id="uf" placeholder="Estado" required>
+          </div><br>
 
-<main>
-	<h1>programadores cariocas</h1>
-</main>
+          <div class="btnenv">
+            <input id="enviar" type="submit" onclick="enviarfor()" value="Enviar">
+          </div>
+      </div>
+      </div>
+    </form>
+  </main>
 
-
-
-
-
-
-
-<!-- RODAPÉ -->
+      <!-- RODAPÉ -->
 <footer>
 	<div class="container-logo">
 		<div class="logo-imagem"></div>
@@ -65,4 +123,6 @@
 	</div>
 </footer>
 
+<script src="./JS/cadastro.js"></script>
+</body>
 </html>
