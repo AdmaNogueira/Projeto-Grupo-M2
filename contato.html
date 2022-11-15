@@ -1,67 +1,107 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./CSS/header.css">
-	<link rel="stylesheet" href="./CSS/footer.css">
-	<script text="text/JavaScript" src="./JS/contato.js"></script>
 	<title>Contato</title>
 </head>
+<body>
+	
 </body>
-<header>
-	<div class="container-logo">
-		<div class="logo-imagem"></div>
-		<div class="logo-texto">
-			<h1>LOGOTIPO</h1>
-		</div>
-	</div>  
-	<!-- LOGOTIPO -->
-
-	<div class="menu">
-		
-			<a href="index.html">Home</a>
-				&nbsp;
-			<a href="serviços.html">Serviços</a>
-				&nbsp;
-			<a href="lista.html">Cadastre-se</a>
-				&nbsp;
-			<a href="contato.html">Contato</a>
-				&nbsp;
-	</div>
-	<!-- MENU -->
-</header>
-<!-- CABEÇALHO -->
-
-
-
-
-
-<main>
-	<h1>programadores cariocas</h1>
-</main>
-
-
-
-
-
-
-
-<!-- RODAPÉ -->
-<footer>
-	<div class="container-logo">
-		<div class="logo-imagem"></div>
-		<div class="logo-texto">
-			<h1>LOGOTIPO</h1>
-		</div>
-	</div>  
-	<!-- LOGOTIPO -->
-
-	<div>
-		<p>INFOS</p>
-	</div>
-</footer>
-
 </html>
+<header>
+
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></head>
+	
+	<style>
+	.navbar { background-color: #000000; }
+	.navbar .navbar-nav .nav-link { color: #ffff; }
+	.navbar .navbar-nav .nav-link:hover { color: rgb(139, 36, 170); }
+	.navbar .navbar-nav .active > .nav-link { color: #969e22; }
+	
+	footer a.text-light:hover { color: (139, 36, 170)!important; text-decoration: none; }
+	footer .cizgi { border-right: 1px solid #535e67; }
+	@media (max-width: 992px) { footer .cizgi { border-right: none; } }
+	</style>
+	<!--- Navbar --->
+	<nav class="navbar navbar-expand-lg">
+		<div class="container">
+			<a class="navbar-brand text-white" href="index.html">  <i class="fab fa-adobe"></i>  Process A+</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nvbCollapse" aria-controls="nvbCollapse">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="nvbCollapse">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item pl-1">
+						<a class="nav-link" href="index.html"><i class="fa fa-home fa-fw mr-1"></i>Home</a>
+					</li>
+					<li class="nav-item pl-1">
+						<a class="nav-link" href="serviços.html"><i class="fa fa-info-circle fa-fw mr-1"></i>Serviços</a>
+					</li>
+					<li class="nav-item pl-1">
+						<a class="nav-link" href="#"><i class="fa fa-user-plus fa-fw mr-1"></i>Lista de Espera</a>
+					</li>
+					<li class="nav-item pl-1">
+						<a class="nav-link" href="#"><i class="fa fa-phone fa-fw fa-rotate-180 mr-1"></i>Contato</a>
+					</li>
+
+					<li class="nav-item pl-1">
+						<a class="nav-link" href="#"><i class="fa fa-sign-in fa-fw mr-1"></i>Login	</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!--# Navbar #-->
+	</header>
+
+<!--- Footer --->
+	<footer>
+		<div class="jumbotron jumbotron-fluid bg-secondary p-4 mt-5 mb-0">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 cizgi">
+						<div class="card bg-secondary border-0">
+							<div class="card-body text-light text-center">
+								<h5 class="card-title text-white display-4" style="font-size:30px">Telif Hakkı</h5>
+							<p class="d-inline lead">Tüm Hakları Saklıdır © 2018<br>
+							<a href="#" class="text-light d-block lead">Blog</a>
+							</p>
+	
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 cizgi">
+						<div class="card bg-secondary border-0">
+							<div class="card-body text-center">
+								<h5 class="card-title text-white display-4" style="font-size:30px">İletişim</h5>
+								<a class="text-light d-block lead" style="margin-left: -20px" href="#"><i class="fa fa-phone mr-2"></i>+90 (000) 000 0 000</a>
+								<a class="text-light d-block lead" href="#"><i class="fa fa-envelope mr-2"></i>admin@localhost.com</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+						<div class="card bg-secondary border-0">
+							<div class="card-body text-center">
+							<h5 class="card-title text-white display-4" style="font-size:30px">Sosyal Medya</h5>
+					
+									<a class="text-light" href="#"><i class="fa fa-facebook-square fa-fw fa-2x"></i></a>
+								
+									<a class="text-light" href="#"><i class="fa fa-twitter-square fa-fw fa-2x"></i></a>
+								
+									<a class="text-light" href="#"><i class="fa fa-instagram fa-fw fa-2x"></i></a>
+								
+									<a class="text-light" href="#"><i class="fa fa-linkedin fa-fw fa-2x"></i></a>
+								
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--# Footer #-->
