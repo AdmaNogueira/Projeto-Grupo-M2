@@ -52,7 +52,7 @@ body {
     opacity: 0
 }
 
-li {
+#att {
     padding-left: 10px;
     font-size: 18px;
     display: inline;
