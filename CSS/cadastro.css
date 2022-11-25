@@ -16,14 +16,7 @@ body {
     color: white;
     
   }
-  .nume input{
-    width: 83px;
-    margin-right: 5px; 
-  }
-  .nume{
-    display: flex;
-    margin: 5px;
-  }
+  
   .bdr{
     border: 5px solid rgb(0, 0, 0);
     border-radius: 40px;
